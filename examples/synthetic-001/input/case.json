@@ -1,0 +1,17 @@
+{
+  "case_id": "SYNTHETIC-AR-001",
+  "note": "SYNTHETIC EXAMPLE - NOT AN OFFICIAL CASE. Invented apparatus/process material used only to demonstrate the Skill interface and to self-test the pipeline. Every number here is fabricated for the fixture and must never be presented as a real measurement.",
+  "output_contract": {
+    "case_id": "",
+    "figure_svg": "",
+    "figure_png": "",
+    "figure_pdf": "",
+    "figure_spec": "",
+    "apparatus": "",
+    "process_flow": "",
+    "technical_route": "",
+    "evidence": [],
+    "status": "",
+    "uncertainty": []
+  }
+}
