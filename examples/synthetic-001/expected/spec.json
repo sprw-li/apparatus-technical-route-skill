@@ -1,0 +1,1683 @@
+{
+  "version": "1.1",
+  "meta": {
+    "case_id": "SYNTHETIC-AR-001",
+    "title": "Bench-scale photocatalytic oxidation rig and its technical route",
+    "subtitle": "Apparatus structure, ordered process steps with material flow, and the four-phase route from catalyst screening to scale-up",
+    "workorder": "apparatus_and_technical_route",
+    "orientation": "portrait",
+    "language": "en",
+    "canvas": {
+      "w_mm": 240.0,
+      "h_mm": 250.0,
+      "margin_mm": 3.0,
+      "dpi": 300
+    },
+    "layout": {
+      "columns": 2,
+      "row_order": [
+        "apparatus",
+        "flow",
+        "route",
+        "data"
+      ]
+    },
+    "expected_relations": [
+      {
+        "from": "A1",
+        "to": "A2",
+        "kind": "material"
+      },
+      {
+        "from": "A2",
+        "to": "A3",
+        "kind": "material"
+      },
+      {
+        "from": "A3",
+        "to": "A4",
+        "kind": "material"
+      },
+      {
+        "from": "A5",
+        "to": "A4",
+        "kind": "gas"
+      },
+      {
+        "from": "A12",
+        "to": "A4",
+        "kind": "energy"
+      },
+      {
+        "from": "A7",
+        "to": "A4",
+        "kind": "heat"
+      },
+      {
+        "from": "A4",
+        "to": "A6",
+        "kind": "material"
+      },
+      {
+        "from": "A6",
+        "to": "A8",
+        "kind": "material"
+      },
+      {
+        "from": "A8",
+        "to": "A9",
+        "kind": "material"
+      },
+      {
+        "from": "A6",
+        "to": "A2",
+        "kind": "control"
+      },
+      {
+        "from": "F1",
+        "to": "F2",
+        "kind": "fluid"
+      },
+      {
+        "from": "F2",
+        "to": "F3",
+        "kind": "fluid"
+      },
+      {
+        "from": "F3",
+        "to": "F4",
+        "kind": "fluid"
+      },
+      {
+        "from": "F4",
+        "to": "F5",
+        "kind": "fluid"
+      },
+      {
+        "from": "F5",
+        "to": "M1",
+        "kind": "branch"
+      },
+      {
+        "from": "F5",
+        "to": "M2",
+        "kind": "branch"
+      },
+      {
+        "from": "M1",
+        "to": "F7",
+        "kind": "merge"
+      },
+      {
+        "from": "M2",
+        "to": "F7",
+        "kind": "merge"
+      },
+      {
+        "from": "M1",
+        "to": "F1",
+        "kind": "loop"
+      },
+      {
+        "from": "M2",
+        "to": "F1",
+        "kind": "loop"
+      },
+      {
+        "from": "M1",
+        "to": "F8",
+        "kind": "waste"
+      },
+      {
+        "from": "M2",
+        "to": "F8",
+        "kind": "waste"
+      },
+      {
+        "from": "PH1N",
+        "to": "PH2N",
+        "kind": "sequence"
+      },
+      {
+        "from": "PH2N",
+        "to": "PH3N",
+        "kind": "sequence"
+      },
+      {
+        "from": "PH3N",
+        "to": "PH4N",
+        "kind": "sequence"
+      }
+    ],
+    "note": "SYNTHETIC EXAMPLE - NOT AN OFFICIAL CASE. Authored as the reference spec for the synthetic apparatus/technical-route fixture."
+  },
+  "palette": {
+    "id": "okabe-ito",
+    "cvd_safe": true
+  },
+  "texts": {
+    "caption": "Figure 03. Bench-scale continuous-flow photocatalytic oxidation rig. Component tags A1-A13 follow the apparatus list; process steps 1-8 follow the process flow. Connector key: blue solid = material line or process stream, dark grey solid = gas flow, amber dashed = heat, pale yellow dashed = energy, pink dash-dot = control signal, orange solid = recycle loop, pale grey dashed = waste, black solid = split, dark solid = merge. The schematic is not to scale and carries no scale bar.",
+    "conclusion": "The rig couples a packed-bed UV-LED reactor to an air-sparged feed and two parallel membrane modules whose retentate is recycled. Conversion rises with catalyst loading up to about 1.2 g/L and then flattens, while the highest rate constant is reached at the shortest residence time."
+  },
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "condition",
+      "claim": "The apparatus list describes an invented bench-scale rig",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L3-L4",
+        "quote": "Invented apparatus for this example. It is internally consistent, but it is not a real rig and nothing here may be cited as a measurement."
+      }
+    },
+    {
+      "id": "E2",
+      "kind": "entity",
+      "claim": "A1 is a glass feed reservoir holding 5.0 L of diluted dye feed",
+      "value": 5.0,
+      "unit": "L",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L8",
+        "quote": "A1 Feed reservoir (part: tank) — borosilicate glass vessel holding 5.0 L of diluted dye feed"
+      }
+    },
+    {
+      "id": "E3",
+      "kind": "entity",
+      "claim": "A2 is the peristaltic pump delivering feed at 2.4 mL/min",
+      "value": 2.4,
+      "unit": "mL/min",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L9",
+        "quote": "A2 Peristaltic pump (part: pump) — delivers the feed at 2.4 mL/min"
+      }
+    },
+    {
+      "id": "E4",
+      "kind": "entity",
+      "claim": "A3 is an inline static mixer",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L10",
+        "quote": "A3 Static mixer (part: mixer) — inline helical mixer"
+      }
+    },
+    {
+      "id": "E5",
+      "kind": "entity",
+      "claim": "A4 is a 250 mm annular UV-LED reactor with a TiO2 packed bed and 8.0 min residence time",
+      "value": 8.0,
+      "unit": "min",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L11",
+        "quote": "A4 Annular UV-LED reactor (part: reactor) — 250 mm borosilicate annulus packed with 1.2 g/L of immobilised TiO2; nominal hydraulic residence time 8.0 min at 2.4 mL/min."
+      }
+    },
+    {
+      "id": "E6",
+      "kind": "entity",
+      "claim": "A5 is the air mass-flow controller metering 0.8 L/min",
+      "value": 0.8,
+      "unit": "L/min",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L12",
+        "quote": "A5 Air mass-flow controller (part: instrument) — meters the sparge gas at 0.8 L/min"
+      }
+    },
+    {
+      "id": "E7",
+      "kind": "entity",
+      "claim": "A6 is an inline UV-Vis sensor measuring absorbance at 254 nm",
+      "value": 254,
+      "unit": "nm",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L13",
+        "quote": "A6 Inline UV-Vis sensor (part: sensor) — measures absorbance at 254 nm"
+      }
+    },
+    {
+      "id": "E8",
+      "kind": "condition",
+      "claim": "A7 is a thermostatic jacket recirculating water at 25.0 °C",
+      "value": 25.0,
+      "unit": "°C",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L14",
+        "quote": "A7 Thermostatic jacket (part: heater) — recirculates water at 25.0 °C"
+      }
+    },
+    {
+      "id": "E9",
+      "kind": "entity",
+      "claim": "A8 is a 0.2 micrometre ceramic membrane separator",
+      "value": 0.2,
+      "unit": "µm",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L15",
+        "quote": "A8 Ceramic membrane separator (part: separator) — 0.2 micrometre membrane"
+      }
+    },
+    {
+      "id": "E10",
+      "kind": "entity",
+      "claim": "A9 is the product reservoir with a 2.0 L working volume",
+      "value": 2.0,
+      "unit": "L",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L16",
+        "quote": "A9 Product reservoir (part: reservoir) — collects the clarified permeate; 2.0 L working volume."
+      }
+    },
+    {
+      "id": "E11",
+      "kind": "entity",
+      "claim": "A10 is the waste bottle for the retained concentrate",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L17",
+        "quote": "A10 Waste bottle (part: waste) — receives the retained concentrate at the end of a campaign."
+      }
+    },
+    {
+      "id": "E12",
+      "kind": "entity",
+      "claim": "A12 is the UV-LED driver for the 365 nm array",
+      "value": 365,
+      "unit": "nm",
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L19",
+        "quote": "A12 UV-LED driver (part: instrument) — drives the 365 nm LED array inside A4."
+      }
+    },
+    {
+      "id": "E13",
+      "kind": "relation",
+      "claim": "A4 carries inlet, outlet, gas_in and uv_in ports",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L24",
+        "quote": "The reactor A4 carries four ports: inlet (bottom, from A3), outlet (top, to A6), gas_in (bottom, from A5) and uv_in (side, from A12)."
+      }
+    },
+    {
+      "id": "E14",
+      "kind": "relation",
+      "claim": "A1 carries an outlet port to A2 and a return port from the retentate",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L25",
+        "quote": "The feed reservoir A1 carries two ports: outlet (bottom, to A2) and return (top, from the membrane retentate)."
+      }
+    },
+    {
+      "id": "E15",
+      "kind": "relation",
+      "claim": "A8 carries a feed port and a retentate port",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L26",
+        "quote": "The membrane A8 carries two ports: feed (side, from A13) and retentate (bottom, back to A1)."
+      }
+    },
+    {
+      "id": "E16",
+      "kind": "relation",
+      "claim": "A6 is wired to A2 as a control loop",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L27",
+        "quote": "A6 is wired to A2 as a control loop"
+      }
+    },
+    {
+      "id": "E17",
+      "kind": "relation",
+      "claim": "The retentate line from A8 to A1 is the internal recycle loop",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "apparatus-list.md",
+        "locator": "L28",
+        "quote": "The retentate line from A8 back to A1 forms the internal recycle loop of the rig."
+      }
+    },
+    {
+      "id": "E18",
+      "kind": "condition",
+      "claim": "Step 1 dilutes a 20.0 mg/L stock to 10.0 mg/L",
+      "value": 10.0,
+      "unit": "mg/L",
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L7",
+        "quote": "Feed preparation — a 20.0 mg/L methylene blue stock is diluted to 10.0 mg/L in the feed reservoir A1."
+      }
+    },
+    {
+      "id": "E19",
+      "kind": "condition",
+      "claim": "Step 2 pumps the feed at 2.4 mL/min",
+      "value": 2.4,
+      "unit": "mL/min",
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L8",
+        "quote": "Feed pumping — the peristaltic pump A2 moves the diluted feed at 2.4 mL/min"
+      }
+    },
+    {
+      "id": "E20",
+      "kind": "condition",
+      "claim": "Step 3 adds air at 0.8 L/min through the static mixer",
+      "value": 0.8,
+      "unit": "L/min",
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L9",
+        "quote": "Air sparging and mixing — the mass-flow controller A5 adds air at 0.8 L/min"
+      }
+    },
+    {
+      "id": "E21",
+      "kind": "condition",
+      "claim": "Step 4 irradiates the packed bed with 365 nm light for 8.0 min",
+      "value": 8.0,
+      "unit": "min",
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L10",
+        "quote": "Photocatalytic oxidation — the annular reactor A4 irradiates the packed bed with 365 nm UV-LED light; the hydraulic residence time is 8.0 min."
+      }
+    },
+    {
+      "id": "E22",
+      "kind": "condition",
+      "claim": "Step 5 logs absorbance at 254 nm every 30 s at 25.0 °C",
+      "value": 30,
+      "unit": "s",
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L11",
+        "quote": "Inline monitoring — the sensor A6 logs absorbance at 254 nm every 30 s while the jacket A7 holds the reactor at 25.0 °C."
+      }
+    },
+    {
+      "id": "E23",
+      "kind": "condition",
+      "claim": "Step 6 splits the reactor outlet into permeate and catalyst-rich retentate",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L12",
+        "quote": "Membrane separation — two parallel membrane modules split the reactor outlet into permeate and a catalyst-rich retentate."
+      }
+    },
+    {
+      "id": "E24",
+      "kind": "condition",
+      "claim": "Step 7 fills the product reservoir with clarified permeate",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L13",
+        "quote": "Permeate collection — the clarified permeate fills the product reservoir A9."
+      }
+    },
+    {
+      "id": "E25",
+      "kind": "condition",
+      "claim": "Step 8 drains the retained concentrate to the waste bottle",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L14",
+        "quote": "Concentrate discharge — at the end of the campaign the retained concentrate is drained to the waste bottle A10."
+      }
+    },
+    {
+      "id": "E26",
+      "kind": "relation",
+      "claim": "M1 and M2 are two parallel membrane modules fed from the same line",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L18",
+        "quote": "Modules M1 and M2 are two parallel membrane modules fed from the same reactor-outlet line"
+      }
+    },
+    {
+      "id": "E27",
+      "kind": "relation",
+      "claim": "Retentate from M1 and M2 returns to A1 as the internal recycle loop",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L19",
+        "quote": "The retentate from M1 and from M2 is returned to the feed reservoir A1, which is the internal recycle loop of the rig."
+      }
+    },
+    {
+      "id": "E28",
+      "kind": "relation",
+      "claim": "The two retentate lines merge and are drained only at campaign end",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L20",
+        "quote": "The two retentate lines merge into a single concentrate line that is drained to A10 only at the end of a campaign."
+      }
+    },
+    {
+      "id": "E29",
+      "kind": "condition",
+      "claim": "Phase 1 screens catalyst loadings and depends on nothing",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L24",
+        "quote": "Phase-1 catalyst screening — goal: rank three catalyst loadings by conversion; methods: batch screens and BET surface-area measurement; inputs: three TiO2 powder batches; outputs: a shortlist; depends_on: none."
+      }
+    },
+    {
+      "id": "E30",
+      "kind": "condition",
+      "claim": "Phase 2 optimises conversion per unit of UV energy after Phase 1",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L25",
+        "quote": "Phase-2 process optimisation — goal: maximise conversion per unit of UV energy; methods: a factorial design over flow rate and air flow; inputs: the shortlisted catalyst; outputs: an operating window; depends_on: Phase-1."
+      }
+    },
+    {
+      "id": "E31",
+      "kind": "condition",
+      "claim": "Phase 3 demonstrates 72 h of continuous stability after Phase 2",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L26",
+        "quote": "Phase-3 validation — goal: demonstrate 72 h of continuous stability; methods: a continuous run with daily sampling; inputs: the operating window; outputs: a stability report; depends_on: Phase-2."
+      }
+    },
+    {
+      "id": "E32",
+      "kind": "condition",
+      "claim": "Phase 4 estimates the energy demand per order of magnitude after Phase 3",
+      "value": null,
+      "unit": null,
+      "source": {
+        "file": "process-flow.md",
+        "locator": "L27",
+        "quote": "Phase-4 scale-up assessment — goal: estimate the energy demand per order of magnitude; methods: dimensional analysis against the measured energy demand; inputs: the stability report; outputs: a scale-up plan; depends_on: Phase-3."
+      }
+    },
+    {
+      "id": "E33",
+      "kind": "number",
+      "claim": "Run R1 at 0.4 g/L: 37.9 % conversion, k = 0.060 per min",
+      "value": 0.06,
+      "unit": "per min",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 2",
+        "quote": "R1,0.4,2.4,0.8,25.0,8.0,0.982,0.610,37.9,0.060,22.4,1.44,4.10,1"
+      }
+    },
+    {
+      "id": "E34",
+      "kind": "number",
+      "claim": "Run R2 at 0.8 g/L: 53.1 % conversion, TOC removal 33.8 %",
+      "value": 53.1,
+      "unit": "percent",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 3",
+        "quote": "R2,0.8,2.4,0.8,25.0,8.0,0.994,0.466,53.1,0.095,33.8,1.44,2.92,1"
+      }
+    },
+    {
+      "id": "E35",
+      "kind": "number",
+      "claim": "Run R3 at 1.2 g/L: 61.5 % conversion, k = 0.120 per min, TOC removal 41.7 %",
+      "value": 61.5,
+      "unit": "percent",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 4",
+        "quote": "R3,1.2,2.4,0.8,25.0,8.0,1.006,0.387,61.5,0.120,41.7,1.44,2.53,1"
+      }
+    },
+    {
+      "id": "E36",
+      "kind": "number",
+      "claim": "Run R4 at 1.6 g/L: 62.7 % conversion, TOC removal 42.9 %",
+      "value": 62.7,
+      "unit": "percent",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 5",
+        "quote": "R4,1.6,2.4,0.8,25.0,8.0,0.998,0.372,62.7,0.123,42.9,1.44,2.48,1"
+      }
+    },
+    {
+      "id": "E37",
+      "kind": "number",
+      "claim": "Run R5 at 1.2 mL/min flow: 77.1 % conversion over 16.0 min, k = 0.092 per min",
+      "value": 77.1,
+      "unit": "percent",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 6",
+        "quote": "R5,1.2,1.2,0.8,25.0,16.0,1.002,0.229,77.1,0.092,56.3,2.88,2.02,1"
+      }
+    },
+    {
+      "id": "E38",
+      "kind": "number",
+      "claim": "Run R6 at 4.8 mL/min flow: 48.3 % conversion, k = 0.165 per min",
+      "value": 0.165,
+      "unit": "per min",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 7",
+        "quote": "R6,1.2,4.8,0.8,25.0,4.0,0.996,0.515,48.3,0.165,29.6,0.72,3.22,1"
+      }
+    },
+    {
+      "id": "E39",
+      "kind": "number",
+      "claim": "Run R7 at 0.2 L/min air: 56.0 % conversion, TOC removal 35.1 %",
+      "value": 56.0,
+      "unit": "percent",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 8",
+        "quote": "R7,1.2,2.4,0.2,25.0,8.0,1.004,0.442,56.0,0.103,35.1,1.44,2.78,1"
+      }
+    },
+    {
+      "id": "E40",
+      "kind": "number",
+      "claim": "Run R8 at 1.6 L/min air: 59.5 % conversion, TOC removal 39.0 %",
+      "value": 59.5,
+      "unit": "percent",
+      "source": {
+        "file": "conditions.csv",
+        "locator": "row 9",
+        "quote": "R8,1.2,2.4,1.6,25.0,8.0,0.990,0.401,59.5,0.113,39.0,1.44,2.60,1"
+      }
+    }
+  ],
+  "panels": [
+    {
+      "id": "P1",
+      "role": "apparatus",
+      "title": "Apparatus: continuous-flow UV-LED rig",
+      "nodes": [
+        {
+          "id": "A1",
+          "part": "tank",
+          "shape": "rrect",
+          "label": "Feed reservoir A1",
+          "sublabel": "5.0 L glass vessel",
+          "value": 5.0,
+          "unit": "L",
+          "source": "E2",
+          "ports": [
+            {
+              "id": "A1_out",
+              "name": "outlet",
+              "side": "bottom",
+              "mate": "A2",
+              "source": "E14"
+            },
+            {
+              "id": "A1_ret",
+              "name": "return",
+              "side": "top",
+              "source": "E14"
+            }
+          ]
+        },
+        {
+          "id": "A2",
+          "part": "pump",
+          "shape": "rrect",
+          "label": "Peristaltic pump A2",
+          "sublabel": "2.4 mL/min",
+          "value": 2.4,
+          "unit": "mL/min",
+          "source": "E3",
+          "ports": [
+            {
+              "id": "A2_in",
+              "name": "inlet",
+              "side": "left",
+              "mate": "A1",
+              "source": "E14"
+            },
+            {
+              "id": "A2_out",
+              "name": "outlet",
+              "side": "right",
+              "source": "E3"
+            }
+          ]
+        },
+        {
+          "id": "A3",
+          "part": "mixer",
+          "shape": "rrect",
+          "label": "Static mixer A3",
+          "sublabel": "inline",
+          "source": "E4"
+        },
+        {
+          "id": "A4",
+          "part": "reactor",
+          "shape": "rrect",
+          "label": "UV-LED reactor A4",
+          "sublabel": "TiO2 bed, 365 nm",
+          "value": 8.0,
+          "unit": "min",
+          "sources": [
+            "E5",
+            "E12"
+          ],
+          "ports": [
+            {
+              "id": "A4_in",
+              "name": "inlet",
+              "side": "bottom",
+              "mate": "A3",
+              "source": "E13"
+            },
+            {
+              "id": "A4_out",
+              "name": "outlet",
+              "side": "top",
+              "mate": "A6",
+              "source": "E13"
+            },
+            {
+              "id": "A4_gas",
+              "name": "gas_in",
+              "side": "bottom",
+              "mate": "A5",
+              "source": "E13"
+            },
+            {
+              "id": "A4_uv",
+              "name": "uv_in",
+              "side": "left",
+              "mate": "A12",
+              "source": "E13"
+            }
+          ]
+        },
+        {
+          "id": "A5",
+          "part": "instrument",
+          "shape": "rrect",
+          "label": "Air mass-flow controller A5",
+          "sublabel": "0.8 L/min",
+          "value": 0.8,
+          "unit": "L/min",
+          "source": "E6",
+          "ports": [
+            {
+              "id": "A5_out",
+              "name": "outlet",
+              "side": "right",
+              "mate": "A4",
+              "source": "E6"
+            }
+          ]
+        },
+        {
+          "id": "A6",
+          "part": "sensor",
+          "shape": "rrect",
+          "label": "UV-Vis sensor A6",
+          "sublabel": "254 nm",
+          "value": 254,
+          "unit": "nm",
+          "source": "E7",
+          "ports": [
+            {
+              "id": "A6_in",
+              "name": "inlet",
+              "side": "left",
+              "mate": "A4",
+              "source": "E13"
+            }
+          ]
+        },
+        {
+          "id": "A7",
+          "part": "heater",
+          "shape": "rrect",
+          "label": "Thermostatic jacket A7",
+          "sublabel": "25.0 °C",
+          "value": 25.0,
+          "unit": "°C",
+          "source": "E8"
+        },
+        {
+          "id": "A8",
+          "part": "separator",
+          "shape": "rrect",
+          "label": "Membrane separator A8",
+          "sublabel": "0.2 micrometre",
+          "value": 0.2,
+          "unit": "µm",
+          "source": "E9",
+          "ports": [
+            {
+              "id": "A8_feed",
+              "name": "feed",
+              "side": "left",
+              "source": "E15"
+            },
+            {
+              "id": "A8_ret",
+              "name": "retentate",
+              "side": "bottom",
+              "mate": "A1",
+              "source": "E15"
+            }
+          ]
+        },
+        {
+          "id": "A9",
+          "part": "reservoir",
+          "shape": "rrect",
+          "label": "Product reservoir A9",
+          "sublabel": "2.0 L permeate",
+          "value": 2.0,
+          "unit": "L",
+          "source": "E10"
+        },
+        {
+          "id": "A10",
+          "part": "waste",
+          "shape": "rrect",
+          "label": "Waste bottle A10",
+          "sublabel": "concentrate",
+          "source": "E11"
+        },
+        {
+          "id": "A12",
+          "part": "instrument",
+          "shape": "rrect",
+          "label": "UV-LED driver A12",
+          "sublabel": "365 nm",
+          "value": 365,
+          "unit": "nm",
+          "source": "E12",
+          "ports": [
+            {
+              "id": "A12_out",
+              "name": "outlet",
+              "side": "right",
+              "mate": "A4",
+              "source": "E13"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "id": "AE1",
+          "from": "A1",
+          "to": "A2",
+          "kind": "material",
+          "label": "feed",
+          "linestyle": "solid",
+          "arrow": "end",
+          "ports": [
+            "A1_out",
+            "A2_in"
+          ],
+          "source": "E2"
+        },
+        {
+          "id": "AE2",
+          "from": "A2",
+          "to": "A3",
+          "kind": "material",
+          "label": "2.4 mL/min",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E3"
+        },
+        {
+          "id": "AE3",
+          "from": "A3",
+          "to": "A4",
+          "kind": "material",
+          "label": "mixed feed",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E4"
+        },
+        {
+          "id": "AE4",
+          "from": "A5",
+          "to": "A4",
+          "kind": "gas",
+          "label": "air 0.8 L/min",
+          "linestyle": "solid",
+          "arrow": "end",
+          "ports": [
+            "A5_out",
+            "A4_gas"
+          ],
+          "source": "E6"
+        },
+        {
+          "id": "AE5",
+          "from": "A12",
+          "to": "A4",
+          "kind": "energy",
+          "label": "365 nm",
+          "linestyle": "dashed",
+          "arrow": "end",
+          "ports": [
+            "A12_out",
+            "A4_uv"
+          ],
+          "source": "E12"
+        },
+        {
+          "id": "AE6",
+          "from": "A7",
+          "to": "A4",
+          "kind": "heat",
+          "label": "25.0 °C",
+          "linestyle": "dashed",
+          "arrow": "end",
+          "source": "E8"
+        },
+        {
+          "id": "AE7",
+          "from": "A4",
+          "to": "A6",
+          "kind": "material",
+          "label": "outlet",
+          "linestyle": "solid",
+          "arrow": "end",
+          "ports": [
+            "A4_out",
+            "A6_in"
+          ],
+          "source": "E13"
+        },
+        {
+          "id": "AE8",
+          "from": "A6",
+          "to": "A8",
+          "kind": "material",
+          "label": "monitored",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E7"
+        },
+        {
+          "id": "AE9",
+          "from": "A8",
+          "to": "A9",
+          "kind": "material",
+          "label": "permeate",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E9"
+        },
+        {
+          "id": "AE12",
+          "from": "A6",
+          "to": "A2",
+          "kind": "control",
+          "label": "flow set point",
+          "linestyle": "dashdot",
+          "arrow": "end",
+          "source": "E16"
+        }
+      ],
+      "charts": [],
+      "declared_edges": [
+        {
+          "from": "A1",
+          "to": "A2",
+          "kind": "material"
+        },
+        {
+          "from": "A2",
+          "to": "A3",
+          "kind": "material"
+        },
+        {
+          "from": "A3",
+          "to": "A4",
+          "kind": "material"
+        },
+        {
+          "from": "A5",
+          "to": "A4",
+          "kind": "gas"
+        },
+        {
+          "from": "A12",
+          "to": "A4",
+          "kind": "energy"
+        },
+        {
+          "from": "A7",
+          "to": "A4",
+          "kind": "heat"
+        },
+        {
+          "from": "A4",
+          "to": "A6",
+          "kind": "material"
+        },
+        {
+          "from": "A6",
+          "to": "A8",
+          "kind": "material"
+        },
+        {
+          "from": "A8",
+          "to": "A9",
+          "kind": "material"
+        },
+        {
+          "from": "A6",
+          "to": "A2",
+          "kind": "control"
+        }
+      ],
+      "legend": {
+        "title": "coupling kind",
+        "items": [
+          {
+            "label": "material line",
+            "kind": "material",
+            "linestyle": "solid",
+            "color": "#0072B2"
+          },
+          {
+            "label": "gas flow",
+            "kind": "gas",
+            "linestyle": "solid",
+            "color": "#4d4d4d"
+          },
+          {
+            "label": "energy",
+            "kind": "energy",
+            "linestyle": "dashed",
+            "color": "#F0E442"
+          },
+          {
+            "label": "heat",
+            "kind": "heat",
+            "linestyle": "dashed",
+            "color": "#E69F00"
+          },
+          {
+            "label": "control signal",
+            "kind": "control",
+            "linestyle": "dashdot",
+            "color": "#CC79A7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P2",
+      "role": "flow",
+      "title": "Process flow: eight ordered steps, two of them parallel",
+      "sequence": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "M1",
+        "M2",
+        "F7",
+        "F8"
+      ],
+      "nodes": [
+        {
+          "id": "F1",
+          "step_no": 1,
+          "shape": "rrect",
+          "label": "Feed preparation",
+          "sublabel": "20.0 to 10.0 mg/L",
+          "source": "E18"
+        },
+        {
+          "id": "F2",
+          "step_no": 2,
+          "shape": "rrect",
+          "label": "Feed pumping",
+          "sublabel": "2.4 mL/min",
+          "value": 2.4,
+          "unit": "mL/min",
+          "source": "E19"
+        },
+        {
+          "id": "F3",
+          "step_no": 3,
+          "shape": "rrect",
+          "label": "Air sparging",
+          "sublabel": "0.8 L/min",
+          "value": 0.8,
+          "unit": "L/min",
+          "source": "E20"
+        },
+        {
+          "id": "F4",
+          "step_no": 4,
+          "shape": "rrect",
+          "label": "Photocatalytic oxidation",
+          "sublabel": "365 nm, 8.0 min",
+          "value": 8.0,
+          "unit": "min",
+          "source": "E21"
+        },
+        {
+          "id": "F5",
+          "step_no": 5,
+          "shape": "rrect",
+          "label": "Inline monitoring",
+          "sublabel": "254 nm, 25.0 °C",
+          "source": "E22"
+        },
+        {
+          "id": "M1",
+          "step_no": 6,
+          "branch": "B_MEM",
+          "loop_to": "F1",
+          "shape": "rrect",
+          "label": "Membrane module M1",
+          "sublabel": "parallel train",
+          "source": "E26"
+        },
+        {
+          "id": "M2",
+          "step_no": 6,
+          "branch": "B_MEM",
+          "loop_to": "F1",
+          "shape": "rrect",
+          "label": "Membrane module M2",
+          "sublabel": "parallel train",
+          "source": "E26"
+        },
+        {
+          "id": "F7",
+          "step_no": 7,
+          "terminal": true,
+          "shape": "rrect",
+          "label": "Permeate collection",
+          "sublabel": "to A9",
+          "source": "E24"
+        },
+        {
+          "id": "F8",
+          "step_no": 8,
+          "terminal": true,
+          "part": "waste",
+          "shape": "rrect",
+          "label": "Concentrate discharge",
+          "sublabel": "to A10",
+          "source": "E25"
+        }
+      ],
+      "edges": [
+        {
+          "id": "FE1",
+          "from": "F1",
+          "to": "F2",
+          "kind": "fluid",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E18"
+        },
+        {
+          "id": "FE2",
+          "from": "F2",
+          "to": "F3",
+          "kind": "fluid",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E19"
+        },
+        {
+          "id": "FE3",
+          "from": "F3",
+          "to": "F4",
+          "kind": "fluid",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E20"
+        },
+        {
+          "id": "FE4",
+          "from": "F4",
+          "to": "F5",
+          "kind": "fluid",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E21"
+        },
+        {
+          "id": "FE5",
+          "from": "F5",
+          "to": "M1",
+          "kind": "branch",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E23"
+        },
+        {
+          "id": "FE6",
+          "from": "F5",
+          "to": "M2",
+          "kind": "branch",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E23"
+        },
+        {
+          "id": "FE7",
+          "from": "M1",
+          "to": "F7",
+          "kind": "merge",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E28"
+        },
+        {
+          "id": "FE8",
+          "from": "M2",
+          "to": "F7",
+          "kind": "merge",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E28"
+        },
+        {
+          "id": "FE9",
+          "from": "M1",
+          "to": "F1",
+          "kind": "loop",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E27"
+        },
+        {
+          "id": "FE10",
+          "from": "M2",
+          "to": "F1",
+          "kind": "loop",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E27"
+        },
+        {
+          "id": "FE11",
+          "from": "M1",
+          "to": "F8",
+          "kind": "waste",
+          "linestyle": "dashed",
+          "arrow": "end",
+          "source": "E25"
+        },
+        {
+          "id": "FE12",
+          "from": "M2",
+          "to": "F8",
+          "kind": "waste",
+          "linestyle": "dashed",
+          "arrow": "end",
+          "source": "E25"
+        }
+      ],
+      "charts": [],
+      "legend": {
+        "title": "stream kind",
+        "items": [
+          {
+            "label": "process stream",
+            "kind": "fluid",
+            "linestyle": "solid",
+            "color": "#0072B2"
+          },
+          {
+            "label": "recycle loop",
+            "kind": "loop",
+            "linestyle": "solid",
+            "color": "#D55E00"
+          },
+          {
+            "label": "waste",
+            "kind": "waste",
+            "linestyle": "dashed",
+            "color": "#b3b3b3"
+          },
+          {
+            "label": "split",
+            "kind": "branch",
+            "linestyle": "solid",
+            "color": "#1a1a1a"
+          },
+          {
+            "label": "merge",
+            "kind": "merge",
+            "linestyle": "solid",
+            "color": "#333333"
+          }
+        ]
+      },
+      "declared_edges": [
+        {
+          "from": "F1",
+          "to": "F2",
+          "kind": "fluid"
+        },
+        {
+          "from": "F2",
+          "to": "F3",
+          "kind": "fluid"
+        },
+        {
+          "from": "F3",
+          "to": "F4",
+          "kind": "fluid"
+        },
+        {
+          "from": "F4",
+          "to": "F5",
+          "kind": "fluid"
+        },
+        {
+          "from": "F5",
+          "to": "M1",
+          "kind": "branch"
+        },
+        {
+          "from": "F5",
+          "to": "M2",
+          "kind": "branch"
+        },
+        {
+          "from": "M1",
+          "to": "F7",
+          "kind": "merge"
+        },
+        {
+          "from": "M2",
+          "to": "F7",
+          "kind": "merge"
+        },
+        {
+          "from": "M1",
+          "to": "F1",
+          "kind": "loop"
+        },
+        {
+          "from": "M2",
+          "to": "F1",
+          "kind": "loop"
+        },
+        {
+          "from": "M1",
+          "to": "F8",
+          "kind": "waste"
+        },
+        {
+          "from": "M2",
+          "to": "F8",
+          "kind": "waste"
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "role": "route",
+      "title": "Technical route: four phases, each depending on the previous one",
+      "sequence": [
+        "PH1N",
+        "PH2N",
+        "PH3N",
+        "PH4N"
+      ],
+      "phases": [
+        {
+          "id": "PH1",
+          "title": "Catalyst screening",
+          "goal": "rank three catalyst loadings by conversion",
+          "methods": [
+            "batch screens",
+            "BET surface-area measurement"
+          ],
+          "inputs": [
+            "three TiO2 powder batches"
+          ],
+          "outputs": [
+            "shortlist"
+          ],
+          "depends_on": [],
+          "source": "E29"
+        },
+        {
+          "id": "PH2",
+          "title": "Process optimisation",
+          "goal": "maximise conversion per unit of UV energy",
+          "methods": [
+            "factorial design over flow rate and air flow"
+          ],
+          "inputs": [
+            "shortlisted catalyst"
+          ],
+          "outputs": [
+            "operating window"
+          ],
+          "depends_on": [
+            "PH1"
+          ],
+          "source": "E30"
+        },
+        {
+          "id": "PH3",
+          "title": "Validation",
+          "goal": "demonstrate 72 h of continuous stability",
+          "methods": [
+            "continuous run with daily sampling"
+          ],
+          "inputs": [
+            "operating window"
+          ],
+          "outputs": [
+            "stability report"
+          ],
+          "depends_on": [
+            "PH2"
+          ],
+          "source": "E31"
+        },
+        {
+          "id": "PH4",
+          "title": "Scale-up assessment",
+          "goal": "estimate the energy demand per order of magnitude",
+          "methods": [
+            "dimensional analysis"
+          ],
+          "inputs": [
+            "stability report"
+          ],
+          "outputs": [
+            "scale-up plan"
+          ],
+          "depends_on": [
+            "PH3"
+          ],
+          "source": "E32"
+        }
+      ],
+      "nodes": [
+        {
+          "id": "PH1N",
+          "step_no": 1,
+          "stage": "PH1",
+          "shape": "rrect",
+          "label": "Phase 1: screening",
+          "sublabel": "rank three loadings",
+          "source": "E29"
+        },
+        {
+          "id": "PH2N",
+          "step_no": 2,
+          "stage": "PH2",
+          "shape": "rrect",
+          "label": "Phase 2: optimisation",
+          "sublabel": "conversion per UV energy",
+          "source": "E30"
+        },
+        {
+          "id": "PH3N",
+          "step_no": 3,
+          "stage": "PH3",
+          "shape": "rrect",
+          "label": "Phase 3: validation",
+          "sublabel": "72 h continuous",
+          "source": "E31"
+        },
+        {
+          "id": "PH4N",
+          "step_no": 4,
+          "stage": "PH4",
+          "shape": "rrect",
+          "label": "Phase 4: scale-up",
+          "sublabel": "energy demand estimate",
+          "source": "E32"
+        }
+      ],
+      "edges": [
+        {
+          "id": "RE1",
+          "from": "PH1N",
+          "to": "PH2N",
+          "kind": "sequence",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E30"
+        },
+        {
+          "id": "RE2",
+          "from": "PH2N",
+          "to": "PH3N",
+          "kind": "sequence",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E31"
+        },
+        {
+          "id": "RE3",
+          "from": "PH3N",
+          "to": "PH4N",
+          "kind": "sequence",
+          "linestyle": "solid",
+          "arrow": "end",
+          "source": "E32"
+        }
+      ],
+      "charts": [],
+      "declared_edges": [
+        {
+          "from": "PH1N",
+          "to": "PH2N",
+          "kind": "sequence"
+        },
+        {
+          "from": "PH2N",
+          "to": "PH3N",
+          "kind": "sequence"
+        },
+        {
+          "from": "PH3N",
+          "to": "PH4N",
+          "kind": "sequence"
+        }
+      ],
+      "legend": {
+        "title": "route link",
+        "items": [
+          {
+            "label": "phase order",
+            "kind": "sequence",
+            "linestyle": "solid",
+            "color": "#0072B2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P4",
+      "role": "data",
+      "title": "Data: conversion and TOC removal against catalyst loading",
+      "nodes": [
+        {
+          "id": "D1",
+          "shape": "rrect",
+          "label": "k at 0.4 g/L",
+          "sublabel": "0.060 per min",
+          "value": 0.06,
+          "unit": "per min",
+          "source": "E33"
+        },
+        {
+          "id": "D2",
+          "shape": "rrect",
+          "label": "k at 1.2 g/L",
+          "sublabel": "0.120 per min",
+          "value": 0.12,
+          "unit": "per min",
+          "source": "E35"
+        },
+        {
+          "id": "D3",
+          "shape": "rrect",
+          "label": "k at 4.8 mL/min",
+          "sublabel": "0.165 per min",
+          "value": 0.165,
+          "unit": "per min",
+          "source": "E38"
+        },
+        {
+          "id": "D4",
+          "shape": "note",
+          "label": "Space-time yield at 1.2 g/L",
+          "sublabel": "61.5 % in 8.0 min",
+          "value": 7.69,
+          "unit": "percent per min",
+          "derived": true,
+          "source_values": [
+            61.5,
+            8.0
+          ],
+          "source": "E35"
+        }
+      ],
+      "edges": [],
+      "charts": [
+        {
+          "id": "C1",
+          "type": "bar",
+          "title": "Conversion and TOC removal vs catalyst loading",
+          "unit": "percent",
+          "categories": [
+            "0.4",
+            "0.8",
+            "1.2",
+            "1.6"
+          ],
+          "series": [
+            {
+              "name": "conversion",
+              "values": [
+                37.9,
+                53.1,
+                61.5,
+                62.7
+              ],
+              "sources": [
+                "E33",
+                "E34",
+                "E35",
+                "E36"
+              ]
+            },
+            {
+              "name": "TOC removal",
+              "values": [
+                22.4,
+                33.8,
+                41.7,
+                42.9
+              ],
+              "sources": [
+                "E33",
+                "E34",
+                "E35",
+                "E36"
+              ]
+            }
+          ]
+        }
+      ],
+      "legend": {
+        "title": "measured quantity",
+        "items": [
+          {
+            "label": "conversion",
+            "color": "#0072B2"
+          },
+          {
+            "label": "TOC removal",
+            "color": "#E69F00"
+          }
+        ]
+      },
+      "declared_edges": []
+    }
+  ],
+  "uncertainty": [
+    {
+      "kind": "synthetic_example",
+      "subject": "the whole fixture",
+      "reason": "Every component, stream, phase and number in this spec is invented for the example; the case_id is SYNTHETIC-AR-001 and the material files are labelled NOT AN OFFICIAL CASE.",
+      "needs_human": false
+    }
+  ],
+  "limitations": [
+    "The fixture is synthetic: it exercises the apparatus/flow/route/data panels and the provenance chain, but it is not an official case and not a measurement.",
+    "Components A11 (sampling port) and A13 (permeate pump) are described in the apparatus list but are not drawn, to keep the apparatus panel legible."
+  ],
+  "change_records": []
+}
