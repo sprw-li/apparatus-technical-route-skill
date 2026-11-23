@@ -1,0 +1,2982 @@
+{
+  "case_id": "SYNTHETIC-AR-001",
+  "status": "ok",
+  "scope": "Single-page apparatus-and-technical-route figure (apparatus structure, ordered process steps with material flow, technical-route phases) built from the case materials; editable layered source plus PNG/PDF exports, with per-element provenance.",
+  "artifacts": {
+    "figure.svg": {
+      "path": "figure.svg",
+      "bytes": 134400,
+      "sha256": "3c88977cdab62973db4004a77b9dc408d021d6fab7e77bcf37801f9459d71b89"
+    },
+    "figure.pdf": {
+      "path": "figure.pdf",
+      "bytes": 1111949,
+      "sha256": "091a61d84455198128464acadff67237bcbc67c2b5bdd72e6ead1e355edc7b80"
+    },
+    "figure.png": {
+      "path": "figure.png",
+      "bytes": 1001258,
+      "sha256": "c6fa268a990cd220bf356096877a36caf1e4acca13f42a57b1c344f1f407abd7"
+    },
+    "figure_spec.resolved.json": {
+      "path": "figure_spec.resolved.json",
+      "bytes": 43564,
+      "sha256": "430c462d8bef2563957e82384d2304b107d9140b780ecd7d9584fdb53aa4f9f0"
+    },
+    "export_report.json": {
+      "path": "export_report.json",
+      "bytes": 3573,
+      "sha256": "ef1bc24b9529782564be568a5161a110a5a577f21f4364e46319f6fcb58c5afa"
+    },
+    "validation_report.json": {
+      "path": "validation_report.json",
+      "bytes": 5492,
+      "sha256": "efd617b58667a54916402aa1337224dbaeabc83a8c3fb7da4d3f94dd6a9dcd5d"
+    },
+    "scene.json": {
+      "path": "scene.json",
+      "bytes": 336107,
+      "sha256": "2ecfd6ecaee8ac3c38455ffaab0aa04ca014092dcde526992d70e3e0962c0833"
+    }
+  },
+  "sources": [
+    {
+      "path": "case.json",
+      "kind": "json",
+      "role": "case input",
+      "sha256": "b7c76499c7499dcf8e41f2e4702f013dbc69f91d8e39b701c2fdc30d560e8519"
+    },
+    {
+      "path": "materials/apparatus-list.md",
+      "kind": "markdown",
+      "role": "material",
+      "sha256": "af42120a4a4c7edb9a76b9678f8110a85cfeb811c899208bc868ad065e8ec046",
+      "bytes": 2287
+    },
+    {
+      "path": "materials/conditions.csv",
+      "kind": "csv",
+      "role": "material",
+      "sha256": "375d01a964f0fc78e0bcc3f415a30a7a732dd221a2cb737d3ae330be97e4fb0c",
+      "bytes": 752
+    },
+    {
+      "path": "materials/process-flow.md",
+      "kind": "markdown",
+      "role": "material",
+      "sha256": "16a0a828439e4ee4b01aec3ca3ede36a47efa40dc40e510aa21efe73fa7eb4ac",
+      "bytes": 2471
+    },
+    {
+      "path": "task.md",
+      "kind": "markdown",
+      "role": "task",
+      "sha256": "721c5a2f1a71028bf30589942fecfb06e1c24c88e65a8ac85b5c60dafa9d931d",
+      "bytes": 769
+    },
+    {
+      "path": "case.json",
+      "kind": "json",
+      "role": "case",
+      "sha256": "b7c76499c7499dcf8e41f2e4702f013dbc69f91d8e39b701c2fdc30d560e8519",
+      "bytes": 570
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Invented apparatus for this example.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L3",
+        "quote": "Invented apparatus for this example."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L3",
+        "span": [
+          61,
+          97
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E2",
+      "claim": "It is internally consistent, but it is not a real rig and nothing here may be cited as a measurement.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L3-4",
+        "quote": "It is internally consistent, but it is not a real rig and nothing here may be cited as a measurement."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L3-4",
+        "span": [
+          98,
+          199
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E3",
+      "claim": "- A1 Feed reservoir (part: tank) — borosilicate glass vessel holding 5.0 L of diluted dye feed;",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L8",
+        "quote": "- A1 Feed reservoir (part: tank) — borosilicate glass vessel holding 5.0 L of diluted dye feed;"
+      },
+      "value": 5.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L8",
+        "span": [
+          216,
+          311
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E4",
+      "claim": "its outlet line runs to the peristaltic pump A2.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L8",
+        "quote": "its outlet line runs to the peristaltic pump A2."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L8",
+        "span": [
+          312,
+          360
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E5",
+      "claim": "- A2 Peristaltic pump (part: pump) — delivers the feed at 2.4 mL/min;",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L9",
+        "quote": "- A2 Peristaltic pump (part: pump) — delivers the feed at 2.4 mL/min;"
+      },
+      "value": 2.4,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L9",
+        "span": [
+          361,
+          430
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E6",
+      "claim": "the calibrated range is 0.5 to 10.0 mL/min.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L9",
+        "quote": "the calibrated range is 0.5 to 10.0 mL/min."
+      },
+      "value": 10.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L9",
+        "span": [
+          431,
+          474
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E7",
+      "claim": "- A3 Static mixer (part: mixer) — inline helical mixer that blends the feed with the sparged air stream before the reactor.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L10",
+        "quote": "- A3 Static mixer (part: mixer) — inline helical mixer that blends the feed with the sparged air stream before the reactor."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L10",
+        "span": [
+          475,
+          598
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E8",
+      "claim": "- A4 Annular UV-LED reactor (part: reactor) — 250 mm borosilicate annulus packed with 1.2 g/L of immobilised TiO2;",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L11",
+        "quote": "- A4 Annular UV-LED reactor (part: reactor) — 250 mm borosilicate annulus packed with 1.2 g/L of immobilised TiO2;"
+      },
+      "value": 1.2,
+      "unit": "mM",
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L11",
+        "span": [
+          599,
+          713
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E9",
+      "claim": "nominal hydraulic residence time 8.0 min at 2.4 mL/min.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L11",
+        "quote": "nominal hydraulic residence time 8.0 min at 2.4 mL/min."
+      },
+      "value": 2.4,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L11",
+        "span": [
+          714,
+          769
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E10",
+      "claim": "- A5 Air mass-flow controller (part: instrument) — meters the sparge gas at 0.8 L/min and holds the dissolved-oxygen set point.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L12",
+        "quote": "- A5 Air mass-flow controller (part: instrument) — meters the sparge gas at 0.8 L/min and holds the dissolved-oxygen set point."
+      },
+      "value": 0.8,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L12",
+        "span": [
+          770,
+          897
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E11",
+      "claim": "- A6 Inline UV-Vis sensor (part: sensor) — measures absorbance at 254 nm on the reactor outlet line;",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L13",
+        "quote": "- A6 Inline UV-Vis sensor (part: sensor) — measures absorbance at 254 nm on the reactor outlet line;"
+      },
+      "value": 254.0,
+      "unit": "nM",
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L13",
+        "span": [
+          898,
+          998
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E12",
+      "claim": "usable range 0.00 to 3.00 AU.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L13",
+        "quote": "usable range 0.00 to 3.00 AU."
+      },
+      "value": 3.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L13",
+        "span": [
+          999,
+          1028
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E13",
+      "claim": "- A7 Thermostatic jacket (part: heater) — recirculates water at 25.0 °C around the reactor wall.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L14",
+        "quote": "- A7 Thermostatic jacket (part: heater) — recirculates water at 25.0 °C around the reactor wall."
+      },
+      "value": 25.0,
+      "unit": "degC",
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L14",
+        "span": [
+          1029,
+          1125
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E14",
+      "claim": "- A8 Ceramic membrane separator (part: separator) — 0.2 micrometre membrane that retains catalyst fines.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L15",
+        "quote": "- A8 Ceramic membrane separator (part: separator) — 0.2 micrometre membrane that retains catalyst fines."
+      },
+      "value": 0.2,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L15",
+        "span": [
+          1126,
+          1230
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E15",
+      "claim": "- A9 Product reservoir (part: reservoir) — collects the clarified permeate;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L16",
+        "quote": "- A9 Product reservoir (part: reservoir) — collects the clarified permeate;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L16",
+        "span": [
+          1231,
+          1306
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E16",
+      "claim": "- A10 Waste bottle (part: waste) — receives the retained concentrate at the end of a campaign.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L17",
+        "quote": "- A10 Waste bottle (part: waste) — receives the retained concentrate at the end of a campaign."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L17",
+        "span": [
+          1329,
+          1423
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E17",
+      "claim": "- A11 Sampling port (part: sample) — septum port on the reactor outlet line for grab samples.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L18",
+        "quote": "- A11 Sampling port (part: sample) — septum port on the reactor outlet line for grab samples."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L18",
+        "span": [
+          1424,
+          1517
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E18",
+      "claim": "- A12 UV-LED driver (part: instrument) — drives the 365 nm LED array inside A4.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L19",
+        "quote": "- A12 UV-LED driver (part: instrument) — drives the 365 nm LED array inside A4."
+      },
+      "value": 365.0,
+      "unit": "nM",
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L19",
+        "span": [
+          1518,
+          1597
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E19",
+      "claim": "- A13 Permeate pump (part: pump) — draws permeate through the membrane at 1.0 mL/min.",
+      "kind": "number",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L20",
+        "quote": "- A13 Permeate pump (part: pump) — draws permeate through the membrane at 1.0 mL/min."
+      },
+      "value": 1.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L20",
+        "span": [
+          1598,
+          1683
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E20",
+      "claim": "- The reactor A4 carries four ports: inlet (bottom, from A3), outlet (top, to A6), gas_in (bottom, from A5) and uv_in (side, from A12).",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L24",
+        "quote": "- The reactor A4 carries four ports: inlet (bottom, from A3), outlet (top, to A6), gas_in (bottom, from A5) and uv_in (side, from A12)."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L24",
+        "span": [
+          1711,
+          1846
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E21",
+      "claim": "- The feed reservoir A1 carries two ports: outlet (bottom, to A2) and return (top, from the membrane retentate).",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L25",
+        "quote": "- The feed reservoir A1 carries two ports: outlet (bottom, to A2) and return (top, from the membrane retentate)."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L25",
+        "span": [
+          1847,
+          1959
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E22",
+      "claim": "- The membrane A8 carries two ports: feed (side, from A13) and retentate (bottom, back to A1).",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L26",
+        "quote": "- The membrane A8 carries two ports: feed (side, from A13) and retentate (bottom, back to A1)."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L26",
+        "span": [
+          1960,
+          2054
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E23",
+      "claim": "- A6 is wired to A2 as a control loop: when the logged absorbance rises above its set point the pump speed is reduced.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L27",
+        "quote": "- A6 is wired to A2 as a control loop: when the logged absorbance rises above its set point the pump speed is reduced."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L27",
+        "span": [
+          2055,
+          2173
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E24",
+      "claim": "- The retentate line from A8 back to A1 forms the internal recycle loop of the rig.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/apparatus-list.md",
+        "locator": "L28",
+        "quote": "- The retentate line from A8 back to A1 forms the internal recycle loop of the rig."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/apparatus-list.md",
+        "locator": "L28",
+        "span": [
+          2174,
+          2257
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E25",
+      "claim": "Invented process description for this example.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L3",
+        "quote": "Invented process description for this example."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L3",
+        "span": [
+          79,
+          125
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E26",
+      "claim": "Not a real process and not a measurement.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L3",
+        "quote": "Not a real process and not a measurement."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L3",
+        "span": [
+          126,
+          167
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E27",
+      "claim": "Ordered steps of one campaign",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L5",
+        "quote": "Ordered steps of one campaign"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L5",
+        "span": [
+          172,
+          201
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E28",
+      "claim": "Feed preparation — a 20.0 mg/L methylene blue stock is diluted to 10.0 mg/L in the feed reservoir A1.",
+      "kind": "number",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L7",
+        "quote": "Feed preparation — a 20.0 mg/L methylene blue stock is diluted to 10.0 mg/L in the feed reservoir A1."
+      },
+      "value": 10.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L7",
+        "span": [
+          206,
+          307
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E29",
+      "claim": "Feed pumping — the peristaltic pump A2 moves the diluted feed at 2.4 mL/min into the reactor line.",
+      "kind": "number",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L8",
+        "quote": "Feed pumping — the peristaltic pump A2 moves the diluted feed at 2.4 mL/min into the reactor line."
+      },
+      "value": 2.4,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L8",
+        "span": [
+          311,
+          409
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E30",
+      "claim": "Air sparging and mixing — the mass-flow controller A5 adds air at 0.8 L/min and the static mixer A3 blends it into the feed.",
+      "kind": "number",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L9",
+        "quote": "Air sparging and mixing — the mass-flow controller A5 adds air at 0.8 L/min and the static mixer A3 blends it into the feed."
+      },
+      "value": 0.8,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L9",
+        "span": [
+          413,
+          537
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E31",
+      "claim": "Photocatalytic oxidation — the annular reactor A4 irradiates the packed bed with 365 nm UV-LED light;",
+      "kind": "number",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L10",
+        "quote": "Photocatalytic oxidation — the annular reactor A4 irradiates the packed bed with 365 nm UV-LED light;"
+      },
+      "value": 365.0,
+      "unit": "nM",
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L10",
+        "span": [
+          541,
+          642
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E32",
+      "claim": "the hydraulic residence time is 8.0 min.",
+      "kind": "number",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L10",
+        "quote": "the hydraulic residence time is 8.0 min."
+      },
+      "value": 8.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L10",
+        "span": [
+          643,
+          683
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E33",
+      "claim": "Inline monitoring — the sensor A6 logs absorbance at 254 nm every 30 s while the jacket A7 holds the reactor at 25.0 °C.",
+      "kind": "number",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L11",
+        "quote": "Inline monitoring — the sensor A6 logs absorbance at 254 nm every 30 s while the jacket A7 holds the reactor at 25.0 °C."
+      },
+      "value": 25.0,
+      "unit": "degC",
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L11",
+        "span": [
+          687,
+          807
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E34",
+      "claim": "Membrane separation — two parallel membrane modules split the reactor outlet into permeate and a catalyst-rich retentate.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L12",
+        "quote": "Membrane separation — two parallel membrane modules split the reactor outlet into permeate and a catalyst-rich retentate."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L12",
+        "span": [
+          811,
+          932
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E35",
+      "claim": "Permeate collection — the clarified permeate fills the product reservoir A9.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L13",
+        "quote": "Permeate collection — the clarified permeate fills the product reservoir A9."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L13",
+        "span": [
+          936,
+          1012
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E36",
+      "claim": "Concentrate discharge — at the end of the campaign the retained concentrate is drained to the waste bottle A10.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L14",
+        "quote": "Concentrate discharge — at the end of the campaign the retained concentrate is drained to the waste bottle A10."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L14",
+        "span": [
+          1016,
+          1127
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E37",
+      "claim": "Parallel and recycle streams",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L16",
+        "quote": "Parallel and recycle streams"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L16",
+        "span": [
+          1132,
+          1160
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E38",
+      "claim": "- Modules M1 and M2 are two parallel membrane modules fed from the same reactor-outlet line;",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L18",
+        "quote": "- Modules M1 and M2 are two parallel membrane modules fed from the same reactor-outlet line;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L18",
+        "span": [
+          1162,
+          1254
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E39",
+      "claim": "either can be isolated for cleaning without stopping the run.",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L18",
+        "quote": "either can be isolated for cleaning without stopping the run."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L18",
+        "span": [
+          1255,
+          1316
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E40",
+      "claim": "- The retentate from M1 and from M2 is returned to the feed reservoir A1, which is the internal recycle loop of the rig.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L19",
+        "quote": "- The retentate from M1 and from M2 is returned to the feed reservoir A1, which is the internal recycle loop of the rig."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L19",
+        "span": [
+          1317,
+          1437
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E41",
+      "claim": "- The two retentate lines merge into a single concentrate line that is drained to A10 only at the end of a campaign.",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L20",
+        "quote": "- The two retentate lines merge into a single concentrate line that is drained to A10 only at the end of a campaign."
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L20",
+        "span": [
+          1438,
+          1554
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E42",
+      "claim": "- Phase-1 catalyst screening — goal: rank three catalyst loadings by conversion;",
+      "kind": "phase",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L24",
+        "quote": "- Phase-1 catalyst screening — goal: rank three catalyst loadings by conversion;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L24",
+        "span": [
+          1577,
+          1657
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E43",
+      "claim": "batch screens and BET surface-area measurement;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L24",
+        "quote": "batch screens and BET surface-area measurement;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L24",
+        "span": [
+          1667,
+          1714
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E44",
+      "claim": "inputs: three TiO2 powder batches;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L24",
+        "quote": "inputs: three TiO2 powder batches;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L24",
+        "span": [
+          1715,
+          1749
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E45",
+      "claim": "- Phase-2 process optimisation — goal: maximise conversion per unit of UV energy;",
+      "kind": "phase",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "quote": "- Phase-2 process optimisation — goal: maximise conversion per unit of UV energy;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "span": [
+          1790,
+          1871
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E46",
+      "claim": "a factorial design over flow rate and air flow;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "quote": "a factorial design over flow rate and air flow;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "span": [
+          1881,
+          1928
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E47",
+      "claim": "inputs: the shortlisted catalyst;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "quote": "inputs: the shortlisted catalyst;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "span": [
+          1929,
+          1962
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E48",
+      "claim": "outputs: an operating window;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "quote": "outputs: an operating window;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L25",
+        "span": [
+          1963,
+          1992
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E49",
+      "claim": "- Phase-3 validation — goal: demonstrate 72 h of continuous stability;",
+      "kind": "phase",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "quote": "- Phase-3 validation — goal: demonstrate 72 h of continuous stability;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "span": [
+          2014,
+          2084
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E50",
+      "claim": "a continuous run with daily sampling;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "quote": "a continuous run with daily sampling;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "span": [
+          2094,
+          2131
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E51",
+      "claim": "inputs: the operating window;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "quote": "inputs: the operating window;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "span": [
+          2132,
+          2161
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E52",
+      "claim": "outputs: a stability report;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "quote": "outputs: a stability report;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L26",
+        "span": [
+          2162,
+          2190
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E53",
+      "claim": "- Phase-4 scale-up assessment — goal: estimate the energy demand per order of magnitude;",
+      "kind": "phase",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "quote": "- Phase-4 scale-up assessment — goal: estimate the energy demand per order of magnitude;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "span": [
+          2212,
+          2300
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E54",
+      "claim": "dimensional analysis against the measured energy demand;",
+      "kind": "condition",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "quote": "dimensional analysis against the measured energy demand;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "span": [
+          2310,
+          2366
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E55",
+      "claim": "inputs: the stability report;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "quote": "inputs: the stability report;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "span": [
+          2367,
+          2396
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E56",
+      "claim": "outputs: a scale-up plan;",
+      "kind": "entity",
+      "source": {
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "quote": "outputs: a scale-up plan;"
+      },
+      "value": null,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/process-flow.md",
+        "locator": "L27",
+        "span": [
+          2397,
+          2422
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E57",
+      "claim": "R1,0.4,2.4,0.8,25.0,8.0,0.982,0.610,37.9,0.060,22.4,1.44,4.10,1",
+      "kind": "number",
+      "source": {
+        "file": "materials/conditions.csv",
+        "locator": "row 2",
+        "quote": "R1,0.4,2.4,0.8,25.0,8.0,0.982,0.610,37.9,0.060,22.4,1.44,4.10,1"
+      },
+      "value": 1.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/conditions.csv",
+        "locator": "row 2",
+        "span": [
+          239,
+          302
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E58",
+      "claim": "R2,0.8,2.4,0.8,25.0,8.0,0.994,0.466,53.1,0.095,33.8,1.44,2.92,1",
+      "kind": "number",
+      "source": {
+        "file": "materials/conditions.csv",
+        "locator": "row 3",
+        "quote": "R2,0.8,2.4,0.8,25.0,8.0,0.994,0.466,53.1,0.095,33.8,1.44,2.92,1"
+      },
+      "value": 1.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/conditions.csv",
+        "locator": "row 3",
+        "span": [
+          303,
+          366
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E59",
+      "claim": "R3,1.2,2.4,0.8,25.0,8.0,1.006,0.387,61.5,0.120,41.7,1.44,2.53,1",
+      "kind": "number",
+      "source": {
+        "file": "materials/conditions.csv",
+        "locator": "row 4",
+        "quote": "R3,1.2,2.4,0.8,25.0,8.0,1.006,0.387,61.5,0.120,41.7,1.44,2.53,1"
+      },
+      "value": 1.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/conditions.csv",
+        "locator": "row 4",
+        "span": [
+          367,
+          430
+        ],
+        "reason": "verbatim match"
+      }
+    },
+    {
+      "id": "E60",
+      "claim": "R4,1.6,2.4,0.8,25.0,8.0,0.998,0.372,62.7,0.123,42.9,1.44,2.48,1",
+      "kind": "number",
+      "source": {
+        "file": "materials/conditions.csv",
+        "locator": "row 5",
+        "quote": "R4,1.6,2.4,0.8,25.0,8.0,0.998,0.372,62.7,0.123,42.9,1.44,2.48,1"
+      },
+      "value": 1.0,
+      "unit": null,
+      "resolved": {
+        "ok": true,
+        "file": "materials/conditions.csv",
+        "locator": "row 5",
+        "span": [
+          431,
+          494
+        ],
+        "reason": "verbatim match"
+      }
+    }
+  ],
+  "change_records": [],
+  "uncertainty": [
+    {
+      "kind": "synthetic_example",
+      "subject": "the whole fixture",
+      "reason": "Every component, stream, phase and number in this spec is invented for the example; the case_id is SYNTHETIC-AR-001 and the material files are labelled NOT AN OFFICIAL CASE.",
+      "needs_human": false
+    }
+  ],
+  "limitations": [
+    "The fixture is synthetic: it exercises the apparatus/flow/route/data panels and the provenance chain, but it is not an official case and not a measurement.",
+    "Components A11 (sampling port) and A13 (permeate pump) are described in the apparatus list but are not drawn, to keep the apparatus panel legible."
+  ],
+  "audit": {
+    "unfilled_fields": {},
+    "unmapped_contract_keys": [
+      "apparatus",
+      "process_flow",
+      "technical_route"
+    ],
+    "checks_ok": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K"
+    ],
+    "checks_failed": [],
+    "checks_warned": [],
+    "gate_verdicts": {
+      "A": "pass",
+      "B": "pass",
+      "C": "pass",
+      "D": "pass",
+      "E": "pass",
+      "F": "pass",
+      "G": "pass",
+      "H": "pass",
+      "I": "pass",
+      "J": "pass",
+      "K": "pass"
+    },
+    "rule_verdicts": {
+      "J": {
+        "J901": "pass",
+        "J902": "pass",
+        "J903": "pass",
+        "J904": "pass",
+        "J905": "pass",
+        "J906": "pass"
+      },
+      "K": {
+        "K901": "pass",
+        "K902": "pass",
+        "K903": "pass",
+        "K904": "pass",
+        "K905": "not_applicable"
+      }
+    },
+    "determinism": {
+      "identical": true,
+      "hashes": {
+        "figure.pdf": {
+          "run1": "091a61d84455198128464acadff67237bcbc67c2b5bdd72e6ead1e355edc7b80",
+          "run2": "091a61d84455198128464acadff67237bcbc67c2b5bdd72e6ead1e355edc7b80",
+          "identical": true
+        },
+        "figure.png": {
+          "run1": "c6fa268a990cd220bf356096877a36caf1e4acca13f42a57b1c344f1f407abd7",
+          "run2": "c6fa268a990cd220bf356096877a36caf1e4acca13f42a57b1c344f1f407abd7",
+          "identical": true
+        },
+        "figure.svg": {
+          "run1": "3c88977cdab62973db4004a77b9dc408d021d6fab7e77bcf37801f9459d71b89",
+          "run2": "3c88977cdab62973db4004a77b9dc408d021d6fab7e77bcf37801f9459d71b89",
+          "identical": true
+        }
+      },
+      "identical_by_format": {
+        "figure.pdf": true,
+        "figure.png": true,
+        "figure.svg": true
+      }
+    },
+    "font": {
+      "family_css": "'Arial', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'DejaVu Sans', 'Microsoft YaHei', 'SimHei', 'Noto Sans SC', 'Source Han Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Zen Hei', sans-serif",
+      "degraded": false,
+      "paths": {
+        "regular": "arial.ttf",
+        "bold": "arialbd.ttf",
+        "cjk": "simhei.ttf"
+      }
+    }
+  },
+  "runtime": {
+    "skill": "apparatus-technical-route (ar.py)",
+    "scene_version": "1.0",
+    "python": "3.12.14",
+    "platform": "win32",
+    "dpi": 300
+  },
+  "contract_values": {
+    "case_id": "SYNTHETIC-AR-001",
+    "figure_svg": "figure.svg",
+    "figure_png": "figure.png",
+    "figure_pdf": "figure.pdf",
+    "figure_spec": "figure_spec.resolved.json",
+    "apparatus": {
+      "note": "no direct field mapping for this contract key; value is the run's actual product summary, not a substitute result",
+      "case_id": "SYNTHETIC-AR-001",
+      "primary_artifact": "figure.svg",
+      "artifacts": [
+        "export_report.json",
+        "figure.pdf",
+        "figure.png",
+        "figure.svg",
+        "figure_spec.resolved.json",
+        "scene.json",
+        "validation_report.json"
+      ],
+      "panels": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "evidence_items": 60
+    },
+    "process_flow": {
+      "note": "no direct field mapping for this contract key; value is the run's actual product summary, not a substitute result",
+      "case_id": "SYNTHETIC-AR-001",
+      "primary_artifact": "figure.svg",
+      "artifacts": [
+        "export_report.json",
+        "figure.pdf",
+        "figure.png",
+        "figure.svg",
+        "figure_spec.resolved.json",
+        "scene.json",
+        "validation_report.json"
+      ],
+      "panels": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "evidence_items": 60
+    },
+    "technical_route": {
+      "note": "no direct field mapping for this contract key; value is the run's actual product summary, not a substitute result",
+      "case_id": "SYNTHETIC-AR-001",
+      "primary_artifact": "figure.svg",
+      "artifacts": [
+        "export_report.json",
+        "figure.pdf",
+        "figure.png",
+        "figure.svg",
+        "figure_spec.resolved.json",
+        "scene.json",
+        "validation_report.json"
+      ],
+      "panels": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "evidence_items": 60
+    },
+    "evidence": [
+      {
+        "id": "E1",
+        "claim": "Invented apparatus for this example.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L3",
+          "quote": "Invented apparatus for this example."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L3",
+          "span": [
+            61,
+            97
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E2",
+        "claim": "It is internally consistent, but it is not a real rig and nothing here may be cited as a measurement.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L3-4",
+          "quote": "It is internally consistent, but it is not a real rig and nothing here may be cited as a measurement."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L3-4",
+          "span": [
+            98,
+            199
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E3",
+        "claim": "- A1 Feed reservoir (part: tank) — borosilicate glass vessel holding 5.0 L of diluted dye feed;",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L8",
+          "quote": "- A1 Feed reservoir (part: tank) — borosilicate glass vessel holding 5.0 L of diluted dye feed;"
+        },
+        "value": 5.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L8",
+          "span": [
+            216,
+            311
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E4",
+        "claim": "its outlet line runs to the peristaltic pump A2.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L8",
+          "quote": "its outlet line runs to the peristaltic pump A2."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L8",
+          "span": [
+            312,
+            360
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E5",
+        "claim": "- A2 Peristaltic pump (part: pump) — delivers the feed at 2.4 mL/min;",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L9",
+          "quote": "- A2 Peristaltic pump (part: pump) — delivers the feed at 2.4 mL/min;"
+        },
+        "value": 2.4,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L9",
+          "span": [
+            361,
+            430
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E6",
+        "claim": "the calibrated range is 0.5 to 10.0 mL/min.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L9",
+          "quote": "the calibrated range is 0.5 to 10.0 mL/min."
+        },
+        "value": 10.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L9",
+          "span": [
+            431,
+            474
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E7",
+        "claim": "- A3 Static mixer (part: mixer) — inline helical mixer that blends the feed with the sparged air stream before the reactor.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L10",
+          "quote": "- A3 Static mixer (part: mixer) — inline helical mixer that blends the feed with the sparged air stream before the reactor."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L10",
+          "span": [
+            475,
+            598
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E8",
+        "claim": "- A4 Annular UV-LED reactor (part: reactor) — 250 mm borosilicate annulus packed with 1.2 g/L of immobilised TiO2;",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L11",
+          "quote": "- A4 Annular UV-LED reactor (part: reactor) — 250 mm borosilicate annulus packed with 1.2 g/L of immobilised TiO2;"
+        },
+        "value": 1.2,
+        "unit": "mM",
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L11",
+          "span": [
+            599,
+            713
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E9",
+        "claim": "nominal hydraulic residence time 8.0 min at 2.4 mL/min.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L11",
+          "quote": "nominal hydraulic residence time 8.0 min at 2.4 mL/min."
+        },
+        "value": 2.4,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L11",
+          "span": [
+            714,
+            769
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E10",
+        "claim": "- A5 Air mass-flow controller (part: instrument) — meters the sparge gas at 0.8 L/min and holds the dissolved-oxygen set point.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L12",
+          "quote": "- A5 Air mass-flow controller (part: instrument) — meters the sparge gas at 0.8 L/min and holds the dissolved-oxygen set point."
+        },
+        "value": 0.8,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L12",
+          "span": [
+            770,
+            897
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E11",
+        "claim": "- A6 Inline UV-Vis sensor (part: sensor) — measures absorbance at 254 nm on the reactor outlet line;",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L13",
+          "quote": "- A6 Inline UV-Vis sensor (part: sensor) — measures absorbance at 254 nm on the reactor outlet line;"
+        },
+        "value": 254.0,
+        "unit": "nM",
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L13",
+          "span": [
+            898,
+            998
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E12",
+        "claim": "usable range 0.00 to 3.00 AU.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L13",
+          "quote": "usable range 0.00 to 3.00 AU."
+        },
+        "value": 3.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L13",
+          "span": [
+            999,
+            1028
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E13",
+        "claim": "- A7 Thermostatic jacket (part: heater) — recirculates water at 25.0 °C around the reactor wall.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L14",
+          "quote": "- A7 Thermostatic jacket (part: heater) — recirculates water at 25.0 °C around the reactor wall."
+        },
+        "value": 25.0,
+        "unit": "degC",
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L14",
+          "span": [
+            1029,
+            1125
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E14",
+        "claim": "- A8 Ceramic membrane separator (part: separator) — 0.2 micrometre membrane that retains catalyst fines.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L15",
+          "quote": "- A8 Ceramic membrane separator (part: separator) — 0.2 micrometre membrane that retains catalyst fines."
+        },
+        "value": 0.2,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L15",
+          "span": [
+            1126,
+            1230
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E15",
+        "claim": "- A9 Product reservoir (part: reservoir) — collects the clarified permeate;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L16",
+          "quote": "- A9 Product reservoir (part: reservoir) — collects the clarified permeate;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L16",
+          "span": [
+            1231,
+            1306
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E16",
+        "claim": "- A10 Waste bottle (part: waste) — receives the retained concentrate at the end of a campaign.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L17",
+          "quote": "- A10 Waste bottle (part: waste) — receives the retained concentrate at the end of a campaign."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L17",
+          "span": [
+            1329,
+            1423
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E17",
+        "claim": "- A11 Sampling port (part: sample) — septum port on the reactor outlet line for grab samples.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L18",
+          "quote": "- A11 Sampling port (part: sample) — septum port on the reactor outlet line for grab samples."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L18",
+          "span": [
+            1424,
+            1517
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E18",
+        "claim": "- A12 UV-LED driver (part: instrument) — drives the 365 nm LED array inside A4.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L19",
+          "quote": "- A12 UV-LED driver (part: instrument) — drives the 365 nm LED array inside A4."
+        },
+        "value": 365.0,
+        "unit": "nM",
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L19",
+          "span": [
+            1518,
+            1597
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E19",
+        "claim": "- A13 Permeate pump (part: pump) — draws permeate through the membrane at 1.0 mL/min.",
+        "kind": "number",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L20",
+          "quote": "- A13 Permeate pump (part: pump) — draws permeate through the membrane at 1.0 mL/min."
+        },
+        "value": 1.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L20",
+          "span": [
+            1598,
+            1683
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E20",
+        "claim": "- The reactor A4 carries four ports: inlet (bottom, from A3), outlet (top, to A6), gas_in (bottom, from A5) and uv_in (side, from A12).",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L24",
+          "quote": "- The reactor A4 carries four ports: inlet (bottom, from A3), outlet (top, to A6), gas_in (bottom, from A5) and uv_in (side, from A12)."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L24",
+          "span": [
+            1711,
+            1846
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E21",
+        "claim": "- The feed reservoir A1 carries two ports: outlet (bottom, to A2) and return (top, from the membrane retentate).",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L25",
+          "quote": "- The feed reservoir A1 carries two ports: outlet (bottom, to A2) and return (top, from the membrane retentate)."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L25",
+          "span": [
+            1847,
+            1959
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E22",
+        "claim": "- The membrane A8 carries two ports: feed (side, from A13) and retentate (bottom, back to A1).",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L26",
+          "quote": "- The membrane A8 carries two ports: feed (side, from A13) and retentate (bottom, back to A1)."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L26",
+          "span": [
+            1960,
+            2054
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E23",
+        "claim": "- A6 is wired to A2 as a control loop: when the logged absorbance rises above its set point the pump speed is reduced.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L27",
+          "quote": "- A6 is wired to A2 as a control loop: when the logged absorbance rises above its set point the pump speed is reduced."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L27",
+          "span": [
+            2055,
+            2173
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E24",
+        "claim": "- The retentate line from A8 back to A1 forms the internal recycle loop of the rig.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/apparatus-list.md",
+          "locator": "L28",
+          "quote": "- The retentate line from A8 back to A1 forms the internal recycle loop of the rig."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/apparatus-list.md",
+          "locator": "L28",
+          "span": [
+            2174,
+            2257
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E25",
+        "claim": "Invented process description for this example.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L3",
+          "quote": "Invented process description for this example."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L3",
+          "span": [
+            79,
+            125
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E26",
+        "claim": "Not a real process and not a measurement.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L3",
+          "quote": "Not a real process and not a measurement."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L3",
+          "span": [
+            126,
+            167
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E27",
+        "claim": "Ordered steps of one campaign",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L5",
+          "quote": "Ordered steps of one campaign"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L5",
+          "span": [
+            172,
+            201
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E28",
+        "claim": "Feed preparation — a 20.0 mg/L methylene blue stock is diluted to 10.0 mg/L in the feed reservoir A1.",
+        "kind": "number",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L7",
+          "quote": "Feed preparation — a 20.0 mg/L methylene blue stock is diluted to 10.0 mg/L in the feed reservoir A1."
+        },
+        "value": 10.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L7",
+          "span": [
+            206,
+            307
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E29",
+        "claim": "Feed pumping — the peristaltic pump A2 moves the diluted feed at 2.4 mL/min into the reactor line.",
+        "kind": "number",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L8",
+          "quote": "Feed pumping — the peristaltic pump A2 moves the diluted feed at 2.4 mL/min into the reactor line."
+        },
+        "value": 2.4,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L8",
+          "span": [
+            311,
+            409
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E30",
+        "claim": "Air sparging and mixing — the mass-flow controller A5 adds air at 0.8 L/min and the static mixer A3 blends it into the feed.",
+        "kind": "number",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L9",
+          "quote": "Air sparging and mixing — the mass-flow controller A5 adds air at 0.8 L/min and the static mixer A3 blends it into the feed."
+        },
+        "value": 0.8,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L9",
+          "span": [
+            413,
+            537
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E31",
+        "claim": "Photocatalytic oxidation — the annular reactor A4 irradiates the packed bed with 365 nm UV-LED light;",
+        "kind": "number",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L10",
+          "quote": "Photocatalytic oxidation — the annular reactor A4 irradiates the packed bed with 365 nm UV-LED light;"
+        },
+        "value": 365.0,
+        "unit": "nM",
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L10",
+          "span": [
+            541,
+            642
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E32",
+        "claim": "the hydraulic residence time is 8.0 min.",
+        "kind": "number",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L10",
+          "quote": "the hydraulic residence time is 8.0 min."
+        },
+        "value": 8.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L10",
+          "span": [
+            643,
+            683
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E33",
+        "claim": "Inline monitoring — the sensor A6 logs absorbance at 254 nm every 30 s while the jacket A7 holds the reactor at 25.0 °C.",
+        "kind": "number",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L11",
+          "quote": "Inline monitoring — the sensor A6 logs absorbance at 254 nm every 30 s while the jacket A7 holds the reactor at 25.0 °C."
+        },
+        "value": 25.0,
+        "unit": "degC",
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L11",
+          "span": [
+            687,
+            807
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E34",
+        "claim": "Membrane separation — two parallel membrane modules split the reactor outlet into permeate and a catalyst-rich retentate.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L12",
+          "quote": "Membrane separation — two parallel membrane modules split the reactor outlet into permeate and a catalyst-rich retentate."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L12",
+          "span": [
+            811,
+            932
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E35",
+        "claim": "Permeate collection — the clarified permeate fills the product reservoir A9.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L13",
+          "quote": "Permeate collection — the clarified permeate fills the product reservoir A9."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L13",
+          "span": [
+            936,
+            1012
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E36",
+        "claim": "Concentrate discharge — at the end of the campaign the retained concentrate is drained to the waste bottle A10.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L14",
+          "quote": "Concentrate discharge — at the end of the campaign the retained concentrate is drained to the waste bottle A10."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L14",
+          "span": [
+            1016,
+            1127
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E37",
+        "claim": "Parallel and recycle streams",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L16",
+          "quote": "Parallel and recycle streams"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L16",
+          "span": [
+            1132,
+            1160
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E38",
+        "claim": "- Modules M1 and M2 are two parallel membrane modules fed from the same reactor-outlet line;",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L18",
+          "quote": "- Modules M1 and M2 are two parallel membrane modules fed from the same reactor-outlet line;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L18",
+          "span": [
+            1162,
+            1254
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E39",
+        "claim": "either can be isolated for cleaning without stopping the run.",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L18",
+          "quote": "either can be isolated for cleaning without stopping the run."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L18",
+          "span": [
+            1255,
+            1316
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E40",
+        "claim": "- The retentate from M1 and from M2 is returned to the feed reservoir A1, which is the internal recycle loop of the rig.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L19",
+          "quote": "- The retentate from M1 and from M2 is returned to the feed reservoir A1, which is the internal recycle loop of the rig."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L19",
+          "span": [
+            1317,
+            1437
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E41",
+        "claim": "- The two retentate lines merge into a single concentrate line that is drained to A10 only at the end of a campaign.",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L20",
+          "quote": "- The two retentate lines merge into a single concentrate line that is drained to A10 only at the end of a campaign."
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L20",
+          "span": [
+            1438,
+            1554
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E42",
+        "claim": "- Phase-1 catalyst screening — goal: rank three catalyst loadings by conversion;",
+        "kind": "phase",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L24",
+          "quote": "- Phase-1 catalyst screening — goal: rank three catalyst loadings by conversion;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L24",
+          "span": [
+            1577,
+            1657
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E43",
+        "claim": "batch screens and BET surface-area measurement;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L24",
+          "quote": "batch screens and BET surface-area measurement;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L24",
+          "span": [
+            1667,
+            1714
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E44",
+        "claim": "inputs: three TiO2 powder batches;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L24",
+          "quote": "inputs: three TiO2 powder batches;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L24",
+          "span": [
+            1715,
+            1749
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E45",
+        "claim": "- Phase-2 process optimisation — goal: maximise conversion per unit of UV energy;",
+        "kind": "phase",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "quote": "- Phase-2 process optimisation — goal: maximise conversion per unit of UV energy;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "span": [
+            1790,
+            1871
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E46",
+        "claim": "a factorial design over flow rate and air flow;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "quote": "a factorial design over flow rate and air flow;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "span": [
+            1881,
+            1928
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E47",
+        "claim": "inputs: the shortlisted catalyst;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "quote": "inputs: the shortlisted catalyst;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "span": [
+            1929,
+            1962
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E48",
+        "claim": "outputs: an operating window;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "quote": "outputs: an operating window;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L25",
+          "span": [
+            1963,
+            1992
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E49",
+        "claim": "- Phase-3 validation — goal: demonstrate 72 h of continuous stability;",
+        "kind": "phase",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "quote": "- Phase-3 validation — goal: demonstrate 72 h of continuous stability;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "span": [
+            2014,
+            2084
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E50",
+        "claim": "a continuous run with daily sampling;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "quote": "a continuous run with daily sampling;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "span": [
+            2094,
+            2131
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E51",
+        "claim": "inputs: the operating window;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "quote": "inputs: the operating window;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "span": [
+            2132,
+            2161
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E52",
+        "claim": "outputs: a stability report;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "quote": "outputs: a stability report;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L26",
+          "span": [
+            2162,
+            2190
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E53",
+        "claim": "- Phase-4 scale-up assessment — goal: estimate the energy demand per order of magnitude;",
+        "kind": "phase",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "quote": "- Phase-4 scale-up assessment — goal: estimate the energy demand per order of magnitude;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "span": [
+            2212,
+            2300
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E54",
+        "claim": "dimensional analysis against the measured energy demand;",
+        "kind": "condition",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "quote": "dimensional analysis against the measured energy demand;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "span": [
+            2310,
+            2366
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E55",
+        "claim": "inputs: the stability report;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "quote": "inputs: the stability report;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "span": [
+            2367,
+            2396
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E56",
+        "claim": "outputs: a scale-up plan;",
+        "kind": "entity",
+        "source": {
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "quote": "outputs: a scale-up plan;"
+        },
+        "value": null,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/process-flow.md",
+          "locator": "L27",
+          "span": [
+            2397,
+            2422
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E57",
+        "claim": "R1,0.4,2.4,0.8,25.0,8.0,0.982,0.610,37.9,0.060,22.4,1.44,4.10,1",
+        "kind": "number",
+        "source": {
+          "file": "materials/conditions.csv",
+          "locator": "row 2",
+          "quote": "R1,0.4,2.4,0.8,25.0,8.0,0.982,0.610,37.9,0.060,22.4,1.44,4.10,1"
+        },
+        "value": 1.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/conditions.csv",
+          "locator": "row 2",
+          "span": [
+            239,
+            302
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E58",
+        "claim": "R2,0.8,2.4,0.8,25.0,8.0,0.994,0.466,53.1,0.095,33.8,1.44,2.92,1",
+        "kind": "number",
+        "source": {
+          "file": "materials/conditions.csv",
+          "locator": "row 3",
+          "quote": "R2,0.8,2.4,0.8,25.0,8.0,0.994,0.466,53.1,0.095,33.8,1.44,2.92,1"
+        },
+        "value": 1.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/conditions.csv",
+          "locator": "row 3",
+          "span": [
+            303,
+            366
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E59",
+        "claim": "R3,1.2,2.4,0.8,25.0,8.0,1.006,0.387,61.5,0.120,41.7,1.44,2.53,1",
+        "kind": "number",
+        "source": {
+          "file": "materials/conditions.csv",
+          "locator": "row 4",
+          "quote": "R3,1.2,2.4,0.8,25.0,8.0,1.006,0.387,61.5,0.120,41.7,1.44,2.53,1"
+        },
+        "value": 1.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/conditions.csv",
+          "locator": "row 4",
+          "span": [
+            367,
+            430
+          ],
+          "reason": "verbatim match"
+        }
+      },
+      {
+        "id": "E60",
+        "claim": "R4,1.6,2.4,0.8,25.0,8.0,0.998,0.372,62.7,0.123,42.9,1.44,2.48,1",
+        "kind": "number",
+        "source": {
+          "file": "materials/conditions.csv",
+          "locator": "row 5",
+          "quote": "R4,1.6,2.4,0.8,25.0,8.0,0.998,0.372,62.7,0.123,42.9,1.44,2.48,1"
+        },
+        "value": 1.0,
+        "unit": null,
+        "resolved": {
+          "ok": true,
+          "file": "materials/conditions.csv",
+          "locator": "row 5",
+          "span": [
+            431,
+            494
+          ],
+          "reason": "verbatim match"
+        }
+      }
+    ],
+    "status": "ok",
+    "uncertainty": [
+      {
+        "kind": "synthetic_example",
+        "subject": "the whole fixture",
+        "reason": "Every component, stream, phase and number in this spec is invented for the example; the case_id is SYNTHETIC-AR-001 and the material files are labelled NOT AN OFFICIAL CASE.",
+        "needs_human": false
+      }
+    ]
+  },
+  "figure_svg": "figure.svg",
+  "figure_png": "figure.png",
+  "figure_pdf": "figure.pdf",
+  "figure_spec": "figure_spec.resolved.json",
+  "apparatus": {
+    "note": "no direct field mapping for this contract key; value is the run's actual product summary, not a substitute result",
+    "case_id": "SYNTHETIC-AR-001",
+    "primary_artifact": "figure.svg",
+    "artifacts": [
+      "export_report.json",
+      "figure.pdf",
+      "figure.png",
+      "figure.svg",
+      "figure_spec.resolved.json",
+      "scene.json",
+      "validation_report.json"
+    ],
+    "panels": [
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "evidence_items": 60
+  },
+  "process_flow": {
+    "note": "no direct field mapping for this contract key; value is the run's actual product summary, not a substitute result",
+    "case_id": "SYNTHETIC-AR-001",
+    "primary_artifact": "figure.svg",
+    "artifacts": [
+      "export_report.json",
+      "figure.pdf",
+      "figure.png",
+      "figure.svg",
+      "figure_spec.resolved.json",
+      "scene.json",
+      "validation_report.json"
+    ],
+    "panels": [
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "evidence_items": 60
+  },
+  "technical_route": {
+    "note": "no direct field mapping for this contract key; value is the run's actual product summary, not a substitute result",
+    "case_id": "SYNTHETIC-AR-001",
+    "primary_artifact": "figure.svg",
+    "artifacts": [
+      "export_report.json",
+      "figure.pdf",
+      "figure.png",
+      "figure.svg",
+      "figure_spec.resolved.json",
+      "scene.json",
+      "validation_report.json"
+    ],
+    "panels": [
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "evidence_items": 60
+  }
+}
